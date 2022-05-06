@@ -79,7 +79,8 @@ class _MyHomePageState extends State<MyHomePage> {
           const Text("初めてのテキスト"),
           const Text("2番目のテキスト"),
           TextButton(
-              onPressed: () => {print("ボタンが押されたよ")}, child: const Text("更新"))
+              onPressed: () => {debugPrint("ボタンが押されたよ")},
+              child: const Text("更新"))
         ]));
   }
 }
