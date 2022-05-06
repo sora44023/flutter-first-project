@@ -76,9 +76,10 @@ class _MyHomePageState extends State<MyHomePage> {
           title: Text(widget.title),
         ),
         body: Column(children: [
-          Text("初めてのテキスト"),
-          Text("2番目のテキスト"),
-          TextButton(onPressed: () => {print("ボタンが押されたよ")}, child: Text("更新"))
+          const Text("初めてのテキスト"),
+          const Text("2番目のテキスト"),
+          TextButton(
+              onPressed: () => {print("ボタンが押されたよ")}, child: const Text("更新"))
         ]));
   }
 }
