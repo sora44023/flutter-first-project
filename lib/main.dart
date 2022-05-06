@@ -80,7 +80,15 @@ class _MyHomePageState extends State<MyHomePage> {
           const Text("2番目のテキスト"),
           TextButton(
               onPressed: () => {debugPrint("ボタンが押されたよ")},
-              child: const Text("更新"))
+              child: const Text("更新")),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: const [
+              Icon(Icons.feedback, color: Colors.lightGreen, size: 24.0),
+              Icon(Icons.join_full, color: Colors.redAccent, size: 30.0),
+              Icon(Icons.abc, color: Colors.amber, size: 36.0)
+            ],
+          )
         ]));
   }
 }
