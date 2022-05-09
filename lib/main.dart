@@ -73,6 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           title: Row(children: const [Icon(Icons.create), Text("タイトルあいうえお")]),
         ),
+        drawer: const Drawer(child: Center(child: Text("Drawer"))),
         body: Column(children: [
           const Text("初めてのテキスト"),
           const Text("2番目のテキスト"),
