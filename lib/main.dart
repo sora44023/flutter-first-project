@@ -70,24 +70,29 @@ class _MyHomePageState extends State<MyHomePage> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return Scaffold(
-        appBar: AppBar(
-          title: Row(children: const [Icon(Icons.create), Text("タイトルあいうえお")]),
-        ),
-        drawer: const Drawer(child: Center(child: Text("Drawer"))),
-        body: Column(children: [
-          const Text("初めてのテキスト"),
-          const Text("2番目のテキスト"),
-          TextButton(
-              onPressed: () => {debugPrint("ボタンが押されたよ")},
-              child: const Text("更新")),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: const [
-              Icon(Icons.feedback, color: Colors.lightGreen, size: 24.0),
-              Icon(Icons.join_full, color: Colors.redAccent, size: 30.0),
-              Icon(Icons.abc, color: Colors.amber, size: 36.0)
-            ],
-          )
-        ]));
+      appBar: AppBar(
+        title: Row(children: const [Icon(Icons.create), Text("タイトルあいうえお")]),
+      ),
+      drawer: const Drawer(child: Center(child: Text("Drawer"))),
+      body: Column(children: [
+        const Text("初めてのテキスト"),
+        const Text("2番目のテキスト"),
+        TextButton(
+            onPressed: () => {debugPrint("ボタンが押されたよ")},
+            child: const Text("更新")),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: const [
+            Icon(Icons.feedback, color: Colors.lightGreen, size: 24.0),
+            Icon(Icons.join_full, color: Colors.redAccent, size: 30.0),
+            Icon(Icons.abc, color: Colors.amber, size: 36.0)
+          ],
+        )
+      ]),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () => {debugPrint("押しました")},
+        child: const Icon(Icons.timer),
+      ),
+    );
   }
 }
