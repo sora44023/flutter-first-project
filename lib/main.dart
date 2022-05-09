@@ -92,7 +92,12 @@ class _MyHomePageState extends State<MyHomePage> {
         Center(
           child: Column(children: [
             Text('$_counter', style: Theme.of(context).textTheme.headline4),
-            Text(_type, style: const TextStyle(fontSize: 20, color: Colors.red))
+            if (_counter % 2 == 0)
+              const Text("偶数だよ",
+                  style: TextStyle(fontSize: 20, color: Colors.red)),
+            if (_counter % 2 == 1)
+              const Text("奇数だよ",
+                  style: TextStyle(fontSize: 20, color: Colors.red))
           ]),
         )
       ]),
